@@ -8,10 +8,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import {UiModule} from '@bluebits/ui';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {AccordionModule} from 'primeng/accordion';
-
+import { UiModule } from '@bluebits/ui';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccordionModule } from 'primeng/accordion';
+import { CategoriesFormComponent } from './categories/categories-form/categories-form.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -25,8 +25,15 @@ const routes: Routes = [
     ProductListComponent,
     HeaderComponent,
     FooterComponent,
+    CategoriesFormComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes),UiModule, AccordionModule, BrowserAnimationsModule ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    UiModule,
+    AccordionModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

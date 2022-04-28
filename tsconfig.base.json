@@ -13,6 +13,7 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "typeRoots": ["node_modules/@types", "node_modules/@angular"],
     "baseUrl": ".",
     "paths": {
       "@bluebits/orders": ["libs/orders/src/index.ts"],
